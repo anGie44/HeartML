@@ -15,7 +15,7 @@ from scipy.spatial.distance import euclidean
 from scipy.stas import linregress
 from scipy.optimize import curve_fit
 from scipy.interpolate import UnivariateSpline 
-from DataManip import *
+from dataManip import *
 
 NUM_BINS = 100
 STD_MULTIPLIER = 2
