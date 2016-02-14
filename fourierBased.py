@@ -34,7 +34,7 @@ def log_ouput(msg, lvl):
 #Load Datasets-Short-Axis: Top-Level
 def segment_all_datasets():
   
-#Step 1: Sementation
+#Step 1: Segmentation
 def segment_dataset(dataset):
   
 #Step 2: Calculating Regions of Interest(ROIs) in MRI slices: the heart 
