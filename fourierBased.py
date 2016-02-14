@@ -34,3 +34,23 @@ def log_ouput(msg, lvl):
 #Load Datasets-Short-Axis: Top-Level
 def segment_all_datasets():
   
+#Step 1: Sementation
+def segment_dataset(dataset):
+  
+#Step 2: Calculating Regions of Interest(ROIs) in MRI slices: the heart 
+def calc_rois(images):
+  def calc_H1(i): #Hilbert space of slice 
+  
+#Step 2a: Filtering via Regression
+#Step 2b: 
+#Step 2c: Pinpoint Circular ROIs in Dicom Images
+
+#Step 3: 2D image mask
+#Step 3a: Locate Left Ventrical Blood Pool (Middle Slice)
+#Step 3b: Orientation: Select Angle with Max. Score
+#Step 3c: Threshold Point Btwn. Blood & Septum
+#Step 3d: Propagation of Segments
+
+#Step 4: Total Volume Calculation
+
+
