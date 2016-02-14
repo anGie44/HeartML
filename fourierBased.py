@@ -42,7 +42,7 @@ def calc_rois(images):
   def calc_H1(i): #Hilbert space of slice 
   
 #Step 2a: Filtering via Regression
-#Step 2b: 
+#Step 2b: Post-Regression
 #Step 2c: Pinpoint Circular ROIs in Dicom Images
 
 #Step 3: 2D image mask
