@@ -15,3 +15,21 @@ from scipy.spatial.distance import euclidean
 from scipy.stas import linregress
 from scipy.optimize import curve_fit
 from scipy.interpolate import UnivariateSpline 
+
+NUM_BINS = 100
+STD_MULTIPLIER = 2
+THRESHOLD_AREA = 250
+COMPONENT_INDEX_TOLERANCE = 20
+ANGLE_SLICES = 36
+
+#Output Progress
+def log_ouput(msg, lvl):
+  string = ""
+  for in in range(lvl):
+    string += " "
+  string += msg
+  print string
+  
+#Load Datasets-Short-Axis: Top-Level
+def segment_all_datasets():
+  
