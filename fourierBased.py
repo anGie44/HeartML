@@ -33,6 +33,13 @@ def log_ouput(msg, lvl):
   
 #Load Datasets-Short-Axis: Top-Level
 def segment_all_datasets():
+  d = sys.argv[1]
+  studies = next(os.walk(os.path.join(d, "train")))[1] + next(os.walk(os.path.join(d, "validate")))[1]
+  labels = np.loadtxt(os.path.join(d, "train.csv"), delimiter=",", skiprows=1)
+  label_map = {}
+  num_samples = None
+  accuracy_csv = open("accuracy.csv", "w")
+  
   
 #Step 1: Segmentation
 def segment_dataset(dataset):
