@@ -27,7 +27,7 @@ class Dataset(object):
     img = d.pixel_array
     return np.array(img)
     
-  def _read_all_dicom_imageS(self):
+  def _read_all_dicom_images(self):
     
   def load(self):
     self._read_all_dicom_images()
