@@ -51,6 +51,15 @@ def calc_rois(images):
 #Step 3c: Threshold Point Btwn. Blood & Septum
 #Step 3d: Propagation of Segments
 
-#Step 4: Total Volume Calculation
+#Step 4: Total Volume(mL) Calculation
+def total_volume(areas, area_multiplier, dist):
+  slices = np.array(sorted(areas.keys()))
+  modified = [areas[i] * area_multiplier for i in slices]
+  vol = 0 
+  for i in slices[:-1]:
+    a, b  = modified[i], modified[i+1]
+    subvol = (dist/3.0) * (a + np.sqrt(a*b) + b)
+    vol += subvol / 1000.0
+  return vol
 
 
